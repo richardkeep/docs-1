@@ -104,7 +104,7 @@ You may generate an invokable controller by using the `--invokable` option of th
 
 [Middleware](/docs/{{version}}/middleware) may be assigned to the controller's routes in your route files:
 
-    Route::get('profile', [UserController::class, 'show'])->middleware('auth');
+    Route::get('/profile', [UserController::class, 'show'])->middleware('auth');
 
 Or, you may find it convenient to specify middleware within your controller's constructor. Using the `middleware` method within your controller's constructor, you can assign middleware to the controller's actions:
 
